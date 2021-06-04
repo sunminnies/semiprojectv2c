@@ -7,7 +7,8 @@
           .moveright { margin-left: 55px; }
           .pushdown { margin-bottom: 10px; }
       </style>
-  
+ 
+ <div id="main">
  <div>
      <i class="fas fa-images fa-2x"> 갤러리</i>
      <hr>
@@ -258,7 +259,7 @@
              </ul>
          </div>
      </div> <!-- pagination -->
-
+</div> 
 
     <script>
     	var newimgbtn = document.getElementById('newimgbtn');

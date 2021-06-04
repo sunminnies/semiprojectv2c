@@ -1,5 +1,6 @@
 <%@ page pageEncoding="UTF-8"%>
 
+<div id="main">
    <div>
        <i class="fas fa-users fa-2x">회원가입</i>
        <hr>
@@ -30,3 +31,4 @@
    <div class="text-center">
        <button type="button" id="go2index" class="btn btn-success"><i class="fas fa-home"></i> 메인으로 이동</button>
    </div>
+</div>

@@ -1,5 +1,6 @@
 <%@ page pageEncoding="UTF-8"%>
 
+<div id="main">
      <div>
          <i class="fas fa-users fa-2x">회원가입</i>
          <hr>
@@ -125,5 +126,5 @@
              </div> <!-- 버튼 -->
          </form>
      </div> <!-- 실명확인 -->
-
+</div>
      

@@ -1,5 +1,6 @@
 <%@ page pageEncoding="UTF-8"%>
 
+<div id="main">
 <div>
     <i class="fas fa-save fa-2x">자료실</i>
     <hr>
@@ -188,7 +189,7 @@
             </ul>
         </div>
     </div> <!-- pagination -->
-
+</div>
 
 
     <script>
@@ -196,5 +197,3 @@
         $('#joinbtn').click(function() {location.href='/join/agree'});
     </script>
 
-  </body>
-</html>

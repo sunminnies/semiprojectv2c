@@ -1,30 +1,31 @@
 <%@ page pageEncoding="UTF-8"%>
 
-               <div> <!-- 페이지타이틀 -->
-               <i class="fas fa-users fa-2x">회원가입</i>
-               <hr>
-               </div>
+<div id="main">
+  <div> <!-- 페이지타이틀 -->
+  <i class="fas fa-users fa-2x">회원가입</i>
+  <hr>
+  </div>
 
-               <nav> <!-- 브레드크럼 -->
-                   <ol class="breadcrumb">
-                   <li class="breadcrumb-item active"><button type="button" disabled class="btn btn-success">이용약관</button></li>
-                   <li class="breadcrumb-item"><button type="button" disabled class="btn btn-light">실명확인</button></li>
-                   <li class="breadcrumb-item"><button type="button" disabled class="btn btn-light">정보입력</button></li>
-                   <li class="breadcrumb-item"><button type="button" disabled class="btn btn-light">가입완료</button></li>
-                   </ol>
-               </nav>
+  <nav> <!-- 브레드크럼 -->
+      <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><button type="button" disabled class="btn btn-success">이용약관</button></li>
+      <li class="breadcrumb-item"><button type="button" disabled class="btn btn-light">실명확인</button></li>
+      <li class="breadcrumb-item"><button type="button" disabled class="btn btn-light">정보입력</button></li>
+      <li class="breadcrumb-item"><button type="button" disabled class="btn btn-light">가입완료</button></li>
+      </ol>
+  </nav>
 
-               <div>
-                   <h2>사이트 약관 동의</h2>
-                   <small class="text-muted">회원가입을 위해서 아래 사이트 이용약관 &middot; 개인정보 수집 및 이용에 대한 안내를 읽고 동의해 주세요</small>
-                   <hr>
-               </div> <!-- 섹션타이틀 -->
+  <div>
+      <h2>사이트 약관 동의</h2>
+      <small class="text-muted">회원가입을 위해서 아래 사이트 이용약관 &middot; 개인정보 수집 및 이용에 대한 안내를 읽고 동의해 주세요</small>
+      <hr>
+  </div> <!-- 섹션타이틀 -->
 
-               <div class="card card-body bg-light">
-                   <h3>사이트 이용약관</h3>
-                   <form name="agreefrm" id="agreefrm">
-                       <div class="form-group">
-                           <textarea rows="10" class="form-control border-danger text-danger">카카오계정 약관
+  <div class="card card-body bg-light">
+      <h3>사이트 이용약관</h3>
+      <form name="agreefrm" id="agreefrm">
+          <div class="form-group">
+              <textarea rows="10" class="form-control border-danger text-danger">카카오계정 약관
 
 제 1 장 환영합니다!
 제 1 조 (목적)
@@ -189,21 +190,21 @@
 시행일자 : 2019년 9월 24일
 
 Copyright © Kakao Corp. All rights reserved.
-                           </textarea></div>
-                       <div class="custom-control custom-checkbox text-right">
-                           <input type="checkbox" id="agree1" class="custom-control-input">
-                           <label for="agree1" class="custom-control-label text-danger">이용약관에 동의합니다.</label>
-                       </div>
-                   </form>
+             </textarea></div>
+         <div class="custom-control custom-checkbox text-right">
+             <input type="checkbox" id="agree1" class="custom-control-input">
+             <label for="agree1" class="custom-control-label text-danger">이용약관에 동의합니다.</label>
+         </div>
+     </form>
 
-               </div> <!-- 이용약관/개인정보 수집 -->
+ </div> <!-- 이용약관/개인정보 수집 -->
 
 
-               <div class="card card-body bg-light">
-               <h3>개인정보 수집 및 이용에 대한 안내</h3>
-               <form name="agreefrm2" id="agreefrm2">
-                   <div class="form-group">
-                       <textarea rows="10" class="form-control border-danger text-danger">개인정보 수집 및 이용 동의
+ <div class="card card-body bg-light">
+ <h3>개인정보 수집 및 이용에 대한 안내</h3>
+ <form name="agreefrm2" id="agreefrm2">
+     <div class="form-group">
+         <textarea rows="10" class="form-control border-danger text-danger">개인정보 수집 및 이용 동의
 
 제1조 목적
 
@@ -317,19 +318,19 @@ Copyright © Kakao Corp. All rights reserved.
 한국어 선택옵션
 Copyright © Kakao Corp. All rights reserved.
 
-                       </textarea></div>
-                   <div class="custom-control custom-checkbox text-right">
-                       <input type="checkbox" id="agree2" class="custom-control-input">
-                       <label for="agree2" class="custom-control-label text-danger">개인정보 수집 및 이용에 동의합니다.</label>
-                   </div>
-                   </form>
-               </div> <!-- 이용약관/개인정보 수집 -->
+           </textarea></div>
+       <div class="custom-control custom-checkbox text-right">
+           <input type="checkbox" id="agree2" class="custom-control-input">
+           <label for="agree2" class="custom-control-label text-danger">개인정보 수집 및 이용에 동의합니다.</label>
+       </div>
+       </form>
+   </div> <!-- 이용약관/개인정보 수집 -->
 
-               <div class="bg-light text-center">
-                   <button type="button" id="okagree" class="btn btn-success">모두 동의합니다.</button>
-                   <button type="button" id="noagree" class="btn btn-danger">동의하지 않습니다.</button>
-               </div> <!-- 버튼들 -->
-
+   <div class="bg-light text-center">
+       <button type="button" id="okagree" class="btn btn-success">모두 동의합니다.</button>
+       <button type="button" id="noagree" class="btn btn-danger">동의하지 않습니다.</button>
+   </div> <!-- 버튼들 -->
+</div>
     <script>
         $('#okagree').click(function() {
             if (!$('#agree1').is(':checked') || $('#agree2').is(':checked') == false)

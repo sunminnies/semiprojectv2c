@@ -1,5 +1,6 @@
 <%@ page pageEncoding="UTF-8"%>
 
+<div id="main">
 <div>
     <i class="fas fa-comments fa-2x">자유게시판</i>
     <hr>
@@ -188,7 +189,7 @@
             </ul>
         </div>
     </div> <!-- pagination -->
-
+</div>
           
     <script>
     	var newbdbtn = document.getElementById('newbdbtn');

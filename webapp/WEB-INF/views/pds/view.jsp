@@ -9,7 +9,8 @@
         .cmtbg2 { background: lime; padding: 7px 0 }
         .pushright { float: right}
     </style>
-  
+ 
+ <div id="main">
      <div>
          <i class="fas fa-save fa-2x">자료실</i>
          <hr>
@@ -117,5 +118,5 @@
              </form>
          </div>
      </div> <!-- 댓글쓰기 -->
-
+</div> 
           

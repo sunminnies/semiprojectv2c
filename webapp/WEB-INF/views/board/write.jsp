@@ -1,5 +1,8 @@
 <%@ page pageEncoding="UTF-8"%>
 
+<div id="main">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
       <div>
           <i class="fas fa-comments fa-2x">자유게시판</i>
           <hr>
@@ -33,7 +36,8 @@
 
               <div class="form-group row">
                   <label class="col-2 col-form-label text-danger text-right">자동<br>입력방지</label>
-                  <img src="/img/google_recaptcha.gif" width="50%">
+                  <div class="g-recaptcha" data-sitekey="6LdqIwgbAAAAANZK0XwzWITYuk5BHsh3otcbOjS9"></div>
+   				  <input type="hidden" id="g-recaptcha" name="g-recaptcha" />
               </div>
 
               <div class="form-group row">
@@ -46,4 +50,4 @@
           </form>
       </div> <!-- card-body -->
 
-          
+    </div>      

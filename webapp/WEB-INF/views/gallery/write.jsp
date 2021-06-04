@@ -4,7 +4,7 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
   <div>
-      <i class="fas fa-save fa-2x">자료실</i>
+      <i class="fas fa-images fa-2x">갤러리</i>
       <hr>
   </div> <!-- 페이지 타이틀 -->
 
